@@ -10,7 +10,6 @@ public:
     Block() = default;
     Block(int figure);
 
-    void UpdatePosition(sf::Vector2f& offset);
     void Rotate();
     void MoveRight(std::vector< std::vector<int>>& m_board_matrix);
     void MoveLeft(std::vector< std::vector<int>>& m_board_matrix);

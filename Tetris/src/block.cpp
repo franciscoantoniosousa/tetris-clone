@@ -2,6 +2,7 @@
 
 Block::Block(int figure)
 {
+    figure *= rand();
     m_id = figure;
     int current_figure = figure % 6;
     m_positions.resize(4);

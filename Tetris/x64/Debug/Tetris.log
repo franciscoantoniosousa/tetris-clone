@@ -1,62 +1,17 @@
-﻿  block.cpp
-C:\Dev\Tetris\Tetris\src\block.cpp(80,34): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(80,34): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(80,34): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(80,34): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(80,34): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(80,47): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(80,47): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(80,47): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(80,47): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(80,47): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(80,80): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(80,80): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(80,80): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(80,80): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(80,80): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(80,93): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(80,93): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(80,93): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(80,93): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(80,93): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(99,42): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(99,42): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(99,42): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(99,42): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(99,42): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(99,53): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(99,53): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(99,53): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(99,53): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(99,53): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(99,84): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(99,84): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(99,84): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(99,84): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(99,84): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(99,95): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(99,95): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(99,95): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(99,95): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(99,95): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(114,42): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(114,42): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(114,42): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(114,42): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(114,42): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(114,53): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(114,53): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(114,53): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(114,53): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(114,53): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(114,84): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(114,84): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(114,84): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(114,84): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(114,84): warning C4244:         ]
-C:\Dev\Tetris\Tetris\src\block.cpp(114,95): warning C4244: 'argument': conversion from 'T' to 'const unsigned __int64', possible loss of data
-C:\Dev\Tetris\Tetris\src\block.cpp(114,95): warning C4244:         with
-C:\Dev\Tetris\Tetris\src\block.cpp(114,95): warning C4244:         [
-C:\Dev\Tetris\Tetris\src\block.cpp(114,95): warning C4244:             T=float
-C:\Dev\Tetris\Tetris\src\block.cpp(114,95): warning C4244:         ]
+﻿  game.cpp
+C:\Dev\Tetris\Tetris\src\game.cpp(6,27): warning C4244: '=': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Dev\Tetris\Tetris\src\game.cpp(31,82): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Dev\Tetris\Tetris\src\game.cpp(31,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Dev\Tetris\Tetris\src\game.cpp(82,36): warning C4244: 'argument': conversion from 'const T' to 'const unsigned __int64', possible loss of data
+C:\Dev\Tetris\Tetris\src\game.cpp(82,36): warning C4244:         with
+C:\Dev\Tetris\Tetris\src\game.cpp(82,36): warning C4244:         [
+C:\Dev\Tetris\Tetris\src\game.cpp(82,36): warning C4244:             T=float
+C:\Dev\Tetris\Tetris\src\game.cpp(82,36): warning C4244:         ]
+C:\Dev\Tetris\Tetris\src\game.cpp(82,48): warning C4244: 'argument': conversion from 'const T' to 'const unsigned __int64', possible loss of data
+C:\Dev\Tetris\Tetris\src\game.cpp(82,48): warning C4244:         with
+C:\Dev\Tetris\Tetris\src\game.cpp(82,48): warning C4244:         [
+C:\Dev\Tetris\Tetris\src\game.cpp(82,48): warning C4244:             T=float
+C:\Dev\Tetris\Tetris\src\game.cpp(82,48): warning C4244:         ]
+  main.cpp
+  Generating Code...
   Tetris.vcxproj -> C:\Dev\Tetris\x64\Debug\Tetris.exe

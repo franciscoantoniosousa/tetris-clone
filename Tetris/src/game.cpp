@@ -3,6 +3,8 @@
 
 Game::Game() 
 {
+    randomizer_seed = time(NULL);
+    srand(randomizer_seed);
     // Set the board matrix columns to COLUMNS size
     m_board_matrix.resize(COLUMNS);
     for (int col = 0; col < m_board_matrix.size(); col++)
@@ -12,7 +14,7 @@ Game::Game()
     }
 
     // Create the first block in the game
-    m_current_block = std::make_shared<Block>(m_next_figure++);
+    m_current_block = std::make_shared<Block>(rand());
     m_blocks_in_game.emplace_back(m_current_block);
     ResetMatrix();
 }
@@ -27,20 +29,19 @@ void Game::DrawBoard(sf::RenderWindow& window)
         for (int row = 0; row < ROWS; row++) {
             // Set dummy_cell to a different position
             dummy_cell.setPosition(RESIZED_CELL_SIZE * column, RESIZED_CELL_SIZE * row);
-
             // check if the current cell block is part of any shape and set the color properly
-            if (m_board_matrix[column][row] > 0) {
-                for (const auto block : m_blocks_in_game) {
-                    if (block->getId() == m_board_matrix[column][row]) {
-                        dummy_cell.setFillColor(block->getColor());
-                    }
-                }
-            }
-            // else set the dummy_block to white 
-            else {
+            if (m_board_matrix[column][row] == 0) {
                 dummy_cell.setFillColor(sf::Color(75, 0, 200));
+                window.draw(dummy_cell);
             }
-            // draw the dummy cell
+        }
+    }
+
+    // draw the blocks in the board
+    for (const auto block : m_blocks_in_game) {
+        for (const auto square : block->getBlockPositions()) {
+            dummy_cell.setPosition(RESIZED_CELL_SIZE * square.x, RESIZED_CELL_SIZE * square.y);
+            dummy_cell.setFillColor(block->getColor());
             window.draw(dummy_cell);
         }
     }
@@ -87,9 +88,9 @@ void Game::Restart()
 {
     m_game_over = false;
     m_blocks_in_game.clear();
-
+    
     // Create the first block in the game
-    m_current_block = std::make_shared<Block>(m_next_figure++);
+    m_current_block = std::make_shared<Block>(rand());
     m_blocks_in_game.emplace_back(m_current_block);
     ResetMatrix();
 }
@@ -113,7 +114,7 @@ void Game::SpawnNewBlock()
     }
 
     // create a new one block if the last block reach the end
-    m_current_block = std::make_shared<Block>(m_next_figure++);
+    m_current_block = std::make_shared<Block>(rand());
     m_blocks_in_game.emplace_back(m_current_block);
 }
 

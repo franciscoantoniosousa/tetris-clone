@@ -27,12 +27,10 @@ public:
 private:
 	std::vector<std::vector<int>>  m_board_matrix;
 	std::vector<std::shared_ptr<Block>> m_blocks_in_game;
-
 	std::shared_ptr<Block> m_current_block;
-
-	int m_next_figure = 1;
 	std::vector <std::vector<int>> m_figures;
 	bool m_game_over = false;
+	unsigned int randomizer_seed;
 };
 
 #endif
