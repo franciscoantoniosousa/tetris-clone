@@ -5,76 +5,66 @@
 #include <iostream>
 
 Game game;
-void KeyPressedEvent(sf::Event event);
-int main()
-{    
-    sf::RenderWindow window({ RESIZED_CELL_SIZE * COLUMNS, RESIZED_CELL_SIZE * ROWS }, "TETRIS");
-    window.setFramerateLimit(10);
+void CheckKeyboardEvents();
 
-    sf::Text text;
-    sf::Font font; 
-    font.loadFromFile("./font/Tetris.ttf");
-    text.setFont(font);
-    text.setString("GAME OVER! \n PRESS ENTER TO RESTART");
-    text.setCharacterSize(24);
-    text.setPosition({ 0 , RESIZED_CELL_SIZE * ROWS / 2});
+int main()
+{
+    sf::RenderWindow window({ RESIZED_CELL_SIZE * COLUMNS + 400, RESIZED_CELL_SIZE * ROWS }, "TETRIS");
+    game.setWindow(&window);
+    window.setFramerateLimit(30);
+    int framecount = 0;
 
     while (window.isOpen())
     {
-        for (auto event = sf::Event(); window.pollEvent(event);)
+        sf::Event event;
+        while (window.pollEvent(event))
         {
             switch (event.type)
             {
             case sf::Event::Closed:
                 window.close();
             case sf::Event::KeyPressed:
-                KeyPressedEvent(event);
+                CheckKeyboardEvents();
             }
         }
+
         // clear the window
         window.clear();
 
         // DRAW EVERYTHING PAST THIS POINT
         // Game Update
-        if(game.getIsGameOver() == false)
-            game.Update(window);
-        else {
-            window.draw(text);
+        if (game.getIsGameOver() == false)
+        {
+            game.Update(framecount % 15== 0);
         }
         window.display();
+        framecount++;
     }
-
-    return 0;
 }
 
-void KeyPressedEvent(sf::Event event) {
-    if (event.type == sf::Event::KeyPressed)
-    {
-        sf::Vector2f dummy_vector;
-        switch (event.key.scancode) {
-            case sf::Keyboard::Scan::W:
-            case sf::Keyboard::Scan::Up:
-                game.RotateBlock();
-                break;
-            case sf::Keyboard::Scan::A:
-            case sf::Keyboard::Scan::Left:
-                dummy_vector = { -1,0 };
-                game.MoveBlockLeft();
-                break;
-            case sf::Keyboard::Scan::D:
-            case sf::Keyboard::Scan::Right:
-                dummy_vector = { 1,0 };
-                game.MoveBlockRight();
-                break;
-            case sf::Keyboard::Scan::S:
-            case sf::Keyboard::Scan::Down:
-                dummy_vector = { 0,1 };
-                game.MoveBlockDown();
-                break;
-            case sf::Keyboard::Scan::Enter:
-                if(game.getIsGameOver())
-                    game.Restart();
-                break;
+void CheckKeyboardEvents()
+{
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+        game.RotateTetromino();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+        game.MoveTetrominoDown();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
+        game.MoveTetrominoLeft();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+        game.MoveTetrominoRight();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
+        if(game.CanDrop())
+        {
+            game.DropTetromino();
         }
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+    {
+        if (game.getIsGameOver())
+            game.Restart();
     }
 }
