@@ -39,7 +39,8 @@ Make sure you have the following installed:
 
 ### Play the game:
 git clone https://github.com/your-username/tetris-clone.git<br>
-cd tetris-clone
+cd tetris-clone/x64/Release
+Run Tetris.exe
    
 ## How to Play
 The objective of the game is to move and rotate falling tetromino pieces to create horizontal lines without gaps. When a line is completed, it disappears, and the player earns points. The game ends when the pieces stack to the top of the screen.
