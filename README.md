@@ -38,10 +38,8 @@ Make sure you have the following installed:
 - **SFML 2.5** or higher
 
 ### Play the game:
-\`\`\`bash
 git clone https://github.com/your-username/tetris-clone.git
 cd tetris-clone
-\`\`\`
    
 ## How to Play
 The objective of the game is to move and rotate falling tetromino pieces to create horizontal lines without gaps. When a line is completed, it disappears, and the player earns points. The game ends when the pieces stack to the top of the screen.
