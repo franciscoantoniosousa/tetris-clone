@@ -38,7 +38,7 @@ Make sure you have the following installed:
 - **SFML 2.5** or higher
 
 ### Play the game:
-git clone https://github.com/your-username/tetris-clone.git <br>
+git clone https://github.com/your-username/tetris-clone.git<br>
 cd tetris-clone
    
 ## How to Play
