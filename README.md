@@ -37,83 +37,19 @@ Make sure you have the following installed:
 - **C++17** or higher
 - **SFML 2.5** or higher
 
-### Clone the repository:
-\`\`\`bash
+### Play the game:
 git clone https://github.com/your-username/tetris-clone.git
 cd tetris-clone
-\`\`\`
-
-### Build Instructions (Linux/macOS)
-1. Install SFML using your package manager or manually:
-   \`\`\`bash
-   sudo apt-get install libsfml-dev  # On Ubuntu
-   brew install sfml  # On macOS
-   \`\`\`
-2. Compile the project:
-   \`\`\`bash
-   mkdir build
-   cd build
-   cmake ..
-   make
-   \`\`\`
-3. Run the game:
-   \`\`\`bash
-   ./tetris-clone
-   \`\`\`
-
-### Build Instructions (Windows)
-1. Download and install SFML from [the official SFML website](https://www.sfml-dev.org/download.php).
-2. Use **CMake** or your favorite IDE (like Visual Studio) to configure and build the project.
-3. Link the required SFML libraries (`sfml-graphics`, `sfml-window`, `sfml-system`).
-4. Build and run the game.
-
+   
 ## How to Play
 The objective of the game is to move and rotate falling tetromino pieces to create horizontal lines without gaps. When a line is completed, it disappears, and the player earns points. The game ends when the pieces stack to the top of the screen.
 
 ## Controls
-- **Left Arrow**: Move tetromino left
-- **Right Arrow**: Move tetromino right
-- **Up Arrow**: Rotate tetromino
-- **Down Arrow**: Soft drop tetromino
+- **Left Arrow**/**A**: Move tetromino left
+- **Right Arrow**/**D**: Move tetromino right
+- **Up Arrow**/**W**: Rotate tetromino
+- **Down Arrow**/**S**: Soft drop tetromino
 - **Spacebar**: Hard drop tetromino
-- **P**: Pause/Resume the game
-- **Escape**: Quit the game
-
-## Project Structure
-\`\`\`
-tetris-clone/
-├── src/                # Source code files
-│   ├── Game.cpp        # Main game logic
-│   ├── Tetromino.cpp   # Tetromino class implementation
-│   └── ...             # Other game components
-├── include/            # Header files
-│   ├── Game.h
-│   ├── Tetromino.h
-│   └── ...
-├── assets/             # Game assets (fonts, images, etc.)
-├── CMakeLists.txt      # Build configuration
-└── README.md           # Project documentation
-\`\`\`
-
-## Contributing
-Contributions are welcome! If you have any ideas for new features, optimizations, or bug fixes, feel free to open an issue or submit a pull request.
-
-To contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or fix:
-   \`\`\`bash
-   git checkout -b feature/new-feature
-   \`\`\`
-3. Commit your changes:
-   \`\`\`bash
-   git commit -m "Add new feature"
-   \`\`\`
-4. Push to the branch:
-   \`\`\`bash
-   git push origin feature/new-feature
-   \`\`\`
-5. Open a pull request.
-
 ## License
 ### SFML
 
