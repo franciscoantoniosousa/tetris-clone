@@ -26,7 +26,7 @@ This project is a Tetris clone built with **C++** and **SFML**. It includes clas
 - Game over screen
 
 ## Screenshots
-![Tetris Clone](path/to/screenshot.png)
+![Tetris Clone](images/screenshot.png)
 
 > Add a screenshot here to showcase your game.
 
