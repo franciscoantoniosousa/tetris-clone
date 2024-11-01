@@ -36,4 +36,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="font\8-bit.ttf" />
+  </ItemGroup>
 </Project>

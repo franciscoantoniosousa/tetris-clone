@@ -1,7 +1,12 @@
 ﻿  main.cpp
+  tetromino.cpp
+  game.cpp
   Generating code
-  0 of 257 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 1022 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   Tetris.vcxproj -> C:\Dev\Tetris\x64\Release\Tetris.exe
+  C:\Dev\Tetris\Tetris\font\8-bit.ttf
+  C:\Dev\Tetris\Tetris\font\license.txt
+  C:\Dev\Tetris\Tetris\font\readme.txt
+  3 File(s) copied

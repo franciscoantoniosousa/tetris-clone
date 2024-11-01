@@ -9,9 +9,14 @@ void CheckKeyboardEvents();
 
 int main()
 {
-    sf::RenderWindow window({ RESIZED_CELL_SIZE * COLUMNS + 400, RESIZED_CELL_SIZE * ROWS }, "TETRIS");
+    sf::RenderWindow window({ RESIZED_CELL_SIZE * COLUMNS + 350, RESIZED_CELL_SIZE * ROWS }, "TETRIS");
     game.setWindow(&window);
-    window.setFramerateLimit(30);
+    window.setFramerateLimit(60);
+
+    sf::Clock clock;
+    float delta_time = 0;
+    clock.restart();
+
     int framecount = 0;
 
     while (window.isOpen())
@@ -33,9 +38,10 @@ int main()
 
         // DRAW EVERYTHING PAST THIS POINT
         // Game Update
-        if (game.getIsGameOver() == false)
-        {
-            game.Update(framecount % 15== 0);
+        bool move_block = clock.getElapsedTime().asMilliseconds() > 1000/game.getLevel();
+        game.Update(move_block);
+        if (move_block) {
+            clock.restart();
         }
         window.display();
         framecount++;
@@ -48,7 +54,7 @@ void CheckKeyboardEvents()
         game.RotateTetromino();
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-        game.MoveTetrominoDown();
+        game.MoveTetrominoDown(game.getCurrentTetromino());
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
         game.MoveTetrominoLeft();

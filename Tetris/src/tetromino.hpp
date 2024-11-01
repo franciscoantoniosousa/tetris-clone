@@ -7,7 +7,7 @@
 
 class Tetromino {
 public:
-    Tetromino() = default;
+    Tetromino() { m_positions.resize(4); };
     Tetromino(int figure);
 
     std::vector<sf::Vector2f> Rotate();
@@ -24,6 +24,7 @@ public:
     inline bool& getCanMove() { return m_can_move; }
     inline std::vector<sf::Vector2f>& getTetrominoPositions() { return m_positions; }
     inline void setIsBeingPlayed(bool is_being_played) { m_is_being_played = is_being_played; }
+    inline void setTetrominoPositions(std::vector<sf::Vector2f> positions) { m_positions = positions; }
 private:
     sf::Color m_color = sf::Color(rand() % 255, rand() % 255, rand() % 255);
     bool m_can_drop = false;
