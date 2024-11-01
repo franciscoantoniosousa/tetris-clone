@@ -28,8 +28,6 @@ This project is a Tetris clone built with **C++** and **SFML**. It includes clas
 ## Screenshots
 ![Tetris Clone](images/screenshot.png)
 
-> Add a screenshot here to showcase your game.
-
 ## Installation
 
 ### Prerequisites
