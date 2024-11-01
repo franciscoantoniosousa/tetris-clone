@@ -39,7 +39,7 @@ Make sure you have the following installed:
 
 ### Play the game:
 git clone https://github.com/your-username/tetris-clone.git<br>
-cd tetris-clone/x64/Release
+cd tetris-clone/x64/Release<br>
 Run Tetris.exe
    
 ## How to Play
