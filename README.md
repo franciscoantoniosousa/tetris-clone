@@ -26,7 +26,7 @@ This project is a Tetris clone built with **C++** and **SFML**. It includes clas
 - Game over screen
 
 ## Screenshots
-![Tetris Clone](path/to/screenshot.png)
+![Tetris Clone](images/screenshot.png)
 
 > Add a screenshot here to showcase your game.
 
@@ -38,8 +38,9 @@ Make sure you have the following installed:
 - **SFML 2.5** or higher
 
 ### Play the game:
-git clone https://github.com/your-username/tetris-clone.git
-cd tetris-clone
+git clone https://github.com/your-username/tetris-clone.git<br>
+cd tetris-clone/x64/Release<br>
+Run Tetris.exe
    
 ## How to Play
 The objective of the game is to move and rotate falling tetromino pieces to create horizontal lines without gaps. When a line is completed, it disappears, and the player earns points. The game ends when the pieces stack to the top of the screen.
